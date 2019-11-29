@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="microservicecloudeureka7001" />
         <module name="microspringcloud-consumer-dept-80" />
         <module name="microspringcloudproviderdept8001" />
         <module name="springcloud1" />

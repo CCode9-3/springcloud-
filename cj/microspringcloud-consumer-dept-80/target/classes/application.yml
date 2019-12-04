@@ -1,9 +1,8 @@
 server:
   port: 80
 
-  eureka:
-    client:
-      fetch-registry: false
-      register-with-eureka: false
-      service-url:
-        defaultZone: http://test7001:7001/eureka/,http://test7002:7002/eureka/,http://test7003:7003/eureka/
+eureka:
+  client:
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://test7001:7001/eureka/,http://test7002:7002/eureka/,http://test7003:7003/eureka/

@@ -14,7 +14,12 @@ import java.util.List;
 public class DeptControllerConsumer
 {
 //    private static final String REST_URL_PREFIX = "http://localhost:8001";
-private static final String REST_URL_PREFIX = "http://MICROSERVICECLOUD-DEPT";
+    /**
+     * 因为ribbon的作用是负载均衡，那么你直接使用ip地址，那么就无法起到负载均衡的作用，
+     * 因为每次都是调用同一个服务，
+     * 当你使用的是服务名称的时候，他会根据自己的算法去选择具有该服务名称的服务。
+     */
+    private static final String REST_URL_PREFIX = "http://MICROSERVICECLOUD-DEPT";
     @Autowired
     private RestTemplate restTemplate;
 

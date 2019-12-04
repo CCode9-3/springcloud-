@@ -5,10 +5,10 @@
 <mapper namespace="com.demo.dao.DeptDao">
 
     <select id="findById" resultType="com.demo.entity.Dept" parameterType="Long">
-        select deptno,dname,db_source from dept where deptno=#{deptno};
+        select deptno as deptNo ,dname as deptName,db_source as dbSource from dept where deptno=#{deptno};
     </select>
     <select id="findAll" resultType="com.demo.entity.Dept">
-        select deptno,dname,db_source from dept;
+        select deptno as deptNo ,dname as deptName,db_source as dbSource from dept;
     </select>
     <insert id="addDept" parameterType="com.demo.entity.Dept">
         INSERT INTO dept(dname,db_source) VALUES(#{dname},DATABASE());
